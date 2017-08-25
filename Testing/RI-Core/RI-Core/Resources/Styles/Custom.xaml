@@ -12,7 +12,7 @@
     <SolidColorBrush x:Key="LightGrayColorBrush" Color="{StaticResource LightGrayColor}" options:Freeze="True" />
 
     <!-- General Window -->
-    <Style TargetType="{x:Type Mah:MetroWindow}" x:Key="StylingWindow">
+    <Style TargetType="{x:Type Mah:MetroWindow}" x:Key="StylingWindow" BasedOn="{StaticResource {x:Type Mah:MetroWindow}}">
         <Setter Property="ResizeMode" Value="CanResize" />
         <Setter Property="MinHeight" Value="650" />
         <Setter Property="MinWidth" Value="800" />
@@ -44,21 +44,18 @@
     <Style TargetType="Grid" x:Key="StylingContent">
         
     </Style>
-    <Style TargetType="Label" x:Key="StylingContentTitle">
+    <Style TargetType="Label" x:Key="StylingContentTitle" BasedOn="{StaticResource MetroLabel}">
         <Setter Property="FontSize" Value="24" />
         <Setter Property="FontWeight" Value="SemiBold" />
     </Style>
-    <Style TargetType="TextBox">
+    <Style TargetType="TextBox" BasedOn="{StaticResource MetroTextBox}">
         <Setter Property="Background" Value="{StaticResource LightGrayColorBrush}" />
         <Setter Property="Padding" Value="1 3" />
     </Style>
-    <Style TargetType="Mah:DateTimePicker">
-        
-    </Style>
-    <Style TargetType="{x:Type DatePickerTextBox}">
+    <Style TargetType="{x:Type DatePickerTextBox}" BasedOn="{StaticResource {x:Type DatePickerTextBox}}">
         <Setter Property="IsHitTestVisible" Value="False" />
     </Style>
-    <Style TargetType="TextBox" x:Key="StylingMessageBox">
+    <Style TargetType="TextBox" x:Key="StylingMessageBox" BasedOn="{StaticResource MetroTextBox}">
         <Setter Property="Background" Value="{StaticResource LightGrayColorBrush}" />
         <Setter Property="Padding" Value="2" />
         <Setter Property="AcceptsReturn" Value="True" />
