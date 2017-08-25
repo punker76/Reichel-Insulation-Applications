@@ -1,0 +1,23 @@
+﻿<Application x:Class="RI_Core.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Controls.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Fonts.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Colors.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/Cyan.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/MahApps.Metro;component/Styles/Accents/BaseDark.xaml" />
+                
+                <!-- Custom Styling -->
+                <ResourceDictionary Source="/Resources/Styles/Custom.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+
+            <!-- XML Data -->
+            <XmlDataProvider x:Key="Data" Source="/Model/SplitButtonData.xml" XPath="Data" IsInitialLoadEnabled="True" />
+            
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

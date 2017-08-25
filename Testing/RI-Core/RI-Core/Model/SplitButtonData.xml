@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Data>
+  <Employees>
+    <Sales>
+      <User>
+        <Name>Rich</Name>
+        <Position>Owner</Position>
+      </User>
+      <User>
+        <Name>Adam</Name>
+        <Position>Sales</Position>
+      </User>
+      <User>
+        <Name>Charlie</Name>
+        <Position>Sales</Position>
+      </User>
+      <User>
+        <Name>Paul</Name>
+        <Position>Sales</Position>
+      </User>
+    </Sales>
+    <Office>
+      <User>
+        <Name>Amy</Name>
+        <Position>Owner</Position>
+      </User>
+      <User>
+        <Name>Valerie</Name>
+        <Position>HR</Position>
+      </User>
+      <User>
+        <Name>Ryan</Name>
+        <Position>IT</Position>
+      </User>
+    </Office>
+  </Employees>
+  <LeadSource>
+    <Source>TV</Source>
+    <Source>Radio</Source>
+    <Source>Building</Source>
+    <Source>Past Customer</Source>
+    <Source>Internet</Source>
+    <Source>Other</Source>
+  </LeadSource>
+  <States>
+    <State>Minnesota</State>
+    <State>South Dakota</State>
+    <State>Iowa</State>
+  </States>
+</Data>
